@@ -2,8 +2,16 @@
   "name": "@messai-io/mess-simulations",
   "version": "0.1.0",
   "description": "Physics-based simulation and modeling tools for Microbial Electrochemical Systems",
+  "license": "MIT",
+  "homepage": "https://github.com/Messai-io/MESS-Simulations",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Messai-io/MESS-Simulations.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Messai-io/MESS-Simulations/issues"
+  },
   "main": "dist/index.js",
-  "module": "dist/index.mjs",
   "types": "dist/index.d.ts",
   "exports": {
     ".": {
@@ -40,18 +48,6 @@
     "three-js"
   ],
   "author": "MESSAI Community",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Messai-io/MESS-Simulations.git"
-  },
-  "homepage": "https://github.com/Messai-io/MESS-Simulations",
-  "bugs": {
-    "url": "https://github.com/Messai-io/MESS-Simulations/issues"
-  },
-  "peerDependencies": {
-    "three": ">=0.150.0"
-  },
   "devDependencies": {
     "@types/node": "^20.0.0",
     "@types/three": "^0.160.0",
@@ -59,5 +55,9 @@
     "tsup": "^8.0.0",
     "typescript": "^5.0.0",
     "vitest": "^1.0.0"
-  }
+  },
+  "peerDependencies": {
+    "three": ">=0.150.0"
+  },
+  "module": "dist/index.mjs"
 }
