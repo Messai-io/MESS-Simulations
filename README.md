@@ -1,6 +1,20 @@
 # MESS-Simulations
 
-**Physics-based simulation and modeling tools for Microbial Electrochemical Systems**
+<!-- MIRROR_DISCLOSURE_START -->
+
+> **This repository is a downstream mirror.** Source of truth lives in the
+> private `messai-ai` monorepo; this mirror is updated automatically on each
+> release. Issues and Discussions are welcome here. PRs against this mirror will
+> be redirected — see [CONTRIBUTING.md](./CONTRIBUTING.md).
+>
+> History was reset on **YYYY-MM-DD** as part of monorepo consolidation.
+> Versions tagged before that date (e.g. `v0.2.0`) remain accessible as
+> historical refs and retain their Zenodo DOIs.
+
+<!-- MIRROR_DISCLOSURE_END -->
+
+**Physics-based simulation and modeling tools for Microbial Electrochemical
+Systems**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![npm version](https://badge.fury.io/js/@messai-io%2Fmess-simulations.svg)](https://www.npmjs.com/package/@messai-io/mess-simulations)
@@ -35,7 +49,7 @@ import { ButlerVolmer } from '@messai-io/mess-simulations';
 const bv = new ButlerVolmer({
   exchangeCurrentDensity: 1e-6, // A/m²
   transferCoefficient: 0.5,
-  temperature: 298.15 // K
+  temperature: 298.15, // K
 });
 
 // Calculate current density at overpotential
@@ -51,7 +65,7 @@ const sim = new BiofilmSimulator({
   initialThickness: 10e-6, // 10 μm
   growthRate: 0.1, // 1/h
   substrate: 'acetate',
-  substrateConcentration: 10 // mM
+  substrateConcentration: 10, // mM
 });
 
 const results = sim.simulate({ duration: 168, timestep: 1 }); // 1 week
@@ -63,7 +77,7 @@ const results = sim.simulate({ duration: 168, timestep: 1 }); // 1 week
 import {
   nernstPotential,
   monodKinetics,
-  massTransferCoefficient
+  massTransferCoefficient,
 } from '@messai-io/mess-simulations';
 
 // Nernst equation
@@ -71,21 +85,21 @@ const E = nernstPotential({
   E0: -0.414, // V vs SHE
   n: 2,
   oxidized: 1e-3,
-  reduced: 1e-6
+  reduced: 1e-6,
 });
 
 // Monod kinetics
 const mu = monodKinetics({
   muMax: 0.5, // 1/h
   Ks: 10, // mg/L
-  S: 100 // mg/L
+  S: 100, // mg/L
 });
 
 // Mass transfer coefficient
 const kLa = massTransferCoefficient({
   diffusivity: 1.5e-9, // m²/s
   characteristicLength: 0.01, // m
-  sherwoodNumber: 2
+  sherwoodNumber: 2,
 });
 ```
 

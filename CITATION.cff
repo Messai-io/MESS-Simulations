@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite it as below."
+type: software
+title: "@messai-io/mess-simulations"
+version: "0.1.0"
+abstract: "Physics-based simulation and modeling tools for Microbial Electrochemical Systems"
+repository-code: "https://github.com/Messai-io/MESS-Simulations.git"
+url: "https://github.com/Messai-io/MESS-Simulations"
+license: "MIT"
+authors:
+  - family-names: "Frons"
+    given-names: "Sam"
+    affiliation: "MESSAI"
