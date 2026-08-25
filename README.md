@@ -16,7 +16,6 @@
 Systems**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![npm version](https://badge.fury.io/js/@messai-io%2Fmess-simulations.svg)](https://www.npmjs.com/package/@messai-io/mess-simulations)
 
 ## Overview
 
@@ -37,19 +36,20 @@ MESS-Simulations provides physics-based simulation tools for MES research:
 
 ## Installation
 
-This is a TypeScript/JavaScript package published to npm. There is no Python
-distribution.
+> **Not yet published to npm.** This package is source-available here while its
+> public API stabilises. Use it by cloning the mirror:
 
 ```bash
-npm install @messai-io/mess-simulations
+git clone https://github.com/Messai-io/MESS-Simulations.git
+cd MESS-Simulations && pnpm install && pnpm build
 ```
+
+Track
+[the packaging issue](https://github.com/Messai-io/MESS-Simulations/issues) for
+the npm release.
 
 The 3D reactor models depend on Three.js as a peer dependency
 (`three >=0.150.0`); install it alongside the package if you use them.
-
-```bash
-npm install three
-```
 
 ## Features
 
@@ -204,8 +204,6 @@ Sherwood, biofilm growth) with their units are documented in
 [docs/equations.md](docs/equations.md).
 
 ## API Reference
-
-See [API Documentation](docs/API.md) for complete reference.
 
 ## Contributing
 
