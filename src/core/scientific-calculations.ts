@@ -5,7 +5,7 @@
 
 // Physical constants from NIST
 export const PHYSICAL_CONSTANTS = {
-  FARADAY: 96485.3329, // C/mol
+  FARADAY: 96485.33212, // C/mol (CODATA 2018)
   GAS_CONSTANT: 8.314462618, // J/(mol·K)
   PLANCK: 6.62607015e-34, // J·s
   AVOGADRO: 6.02214076e23, // mol⁻¹
